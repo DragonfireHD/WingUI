@@ -13,7 +13,7 @@ class TerrainWing extends Task{
 	
 	public function __construct(Main $plugin){
 		$this->plugin = $plugin;
-		$this->plugin->getScheduler()->scheduleRepeatingTask($this, (int)$this->plugin->checker);
+		$this->plugin->getScheduler()->scheduleRepeatingTask($this, 5);
 	}
 
 	public function onRun(int $currentTick){
