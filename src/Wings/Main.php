@@ -6,7 +6,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\command\ConsoleCommandSender;
-use Wings\Tasks\{DevilWing, AngleWing, FajarWing, TerrainWing, DarkPurpWing, PhoniexWing, ForceFieldWing, TennyWing};
+use Wings\Task\{DevilWing, AngleWing, FajarWing, TerrainWing, DarkPurpWing, PhoniexWing, ForceFieldWing, TennyWing};
 use pocketmine\Player;
 use jojoe77777\FormAPI\SimpleForm;
 use pocketmine\utils\Config;
