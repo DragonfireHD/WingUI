@@ -1,6 +1,6 @@
 <?php
 
-namespace Wings\Tasks;
+namespace Wings\Task;
 
 use Wings\Main;
 use pocketmine\scheduler\Task;
