@@ -6,7 +6,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\command\ConsoleCommandSender;
-use Wings\Tasks\{DevilWing, AngleWing, FajarWing, TerrainWing, DarkPurpWing, PhoniexWing, ForceFieldWing, TennyWing};
+use Wings\Task\{DevilWing, AngleWing, FajarWing, TerrainWing, DarkPurpWing, PhoniexWing, ForceFieldWing, TennyWing};
 use pocketmine\Player;
 use jojoe77777\FormAPI\SimpleForm;
 use pocketmine\utils\Config;
@@ -38,7 +38,7 @@ class Main extends PluginBase{
 		$this->taskwingforcefield = new ForceFieldWing($this);
 		$this->taskwingtenny = new TennyWing($this);
 		$this->saveResource("time.yml");
-		$config = new Config($this->getDataFolder() . "time.yml", Config::YAML);
+		$config = new Config($this->getDataFolder(). "time.yml", Config::YAML);
 		$this->checker = $config->get("time-update");
 		$this->getServer()->getLogger()->info("§b         
 | |  | (_)            
@@ -50,7 +50,6 @@ class Main extends PluginBase{
                 |___/ 
 §aMake by AmlxP");
 	}
-
 	public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
 		if ($cmd == "wing"){
 			if(!$sender instanceof Player){
