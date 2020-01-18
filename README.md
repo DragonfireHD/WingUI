@@ -1,7 +1,6 @@
 # WingUI
 Plugin PMMP WingUI For Server Minecraft PE/BE
 
-List:
 •• WING ••  •• PERMS ••
 - AngelWing (ange.wing)
 - DarkPurpWing (darkpurp.wing)
